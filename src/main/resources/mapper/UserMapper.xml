@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.company.project.model.User">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <result column="register_date" jdbcType="TIMESTAMP" property="registerDate"/>
+    </resultMap>
+
+    <resultMap id="BaseResultMap2" type="java.util.HashMap">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <result column="register_date" jdbcType="TIMESTAMP" property="registerDate"/>
+    </resultMap>
+
+    <resultMap id="queryUserClass" type="com.company.project.model.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <result column="register_date" jdbcType="TIMESTAMP" property="registerDate"/>
+        <collection property="classrooms" ofType="com.company.project.model.Classroom">
+            <id column="cid" jdbcType="INTEGER" property="id"/>
+            <result column="userid" jdbcType="INTEGER" property="userid"/>
+            <result column="classid" jdbcType="INTEGER" property="classid"/>
+            <result column="description" jdbcType="VARCHAR" property="description"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="queryOrderMap" type="java.util.HashMap">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <association property="order" javaType="com.company.project.model.Orders">
+            <id column="order_id" jdbcType="INTEGER" property="orderId"/>
+            <result column="user_id" property="userId" jdbcType="INTEGER"></result>
+            <result column="order_description" jdbcType="VARCHAR" property="orderDescription"/>
+        </association>
+    </resultMap>
+
+    <insert id="saveNow" parameterType="com.company.project.model.User">
+        insert into user (username,password,nick_name,sex,register_date) values
+        (#{username},#{password},#{nickName},#{sex},now())
+    </insert>
+
+    <select id="selectByNameAndSex" resultMap="BaseResultMap">
+        select * from user where username = #{arg0} and sex = #{arg1}
+    </select>
+
+    <select id="count" resultType="int">
+        select count(id) from user
+    </select>
+
+    <select id="findNameById" parameterType="int" resultType="java.lang.String">
+        select username from user where id = #{id}
+    </select>
+
+    <select id="queryUserClassroom" resultMap="queryUserClass">
+        select
+        u.id,
+        u.username,
+        u.password,
+        u.nick_name,
+        u.sex,
+        u.register_date,
+        c.id cid,
+        c.classid,
+        c.userid,
+        c.description
+        from user u
+        left join classroom c
+        on u.id = c.userid
+    </select>
+
+    <select id="queryOrder" resultMap="queryOrderMap">
+        select
+        u.id,
+        u.username,
+        u.password,
+        u.nick_name,
+        u.sex,
+        o.order_id,
+        o.user_id,
+        o.order_description
+        from user u
+        left join orders o
+        on o.user_id = u.id
+    </select>
+
+
+    <select id="getUser2" resultMap="BaseResultMap2">
+        select * from user
+    </select>
+
+    <select id="getUser3" resultMap="BaseResultMap">
+        select id,username,password,nick_name,sex,register_date from user
+    </select>
+
+    <select id="queryUserByName" resultMap="BaseResultMap">
+        select * from user where username = #{username}
+    </select>
+</mapper>
