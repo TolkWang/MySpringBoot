@@ -26,4 +26,6 @@ public interface UserMapper extends Mapper<User> {
     List<User> getUser3();
 
     User queryUserByName(String username);
+
+
 }

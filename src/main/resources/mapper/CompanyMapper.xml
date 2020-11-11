@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.CompanyMapper">
+
+    <resultMap id="companyResult" type="Company">
+        <id property="CompanyId" column="company_id" />
+        <result property="CompanyName" column="company_name" />
+        <result property="CompanyAddress" column="company_address" />
+        <result property="CreateTime" column="create_time" />
+        <result property="UpdateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="companyColumns"> ${alias}.company_id,${alias}.create_time,${alias}.update_time,${alias}.company_name,${alias}.company_address </sql>
+
+    <insert id="insertCompany" useGeneratedKeys="true" keyProperty="CompanyId" keyColumn="company_id">
+        insert into t_company (create_time,update_time,company_name,company_address) values (now(),now(),#{CompanyName},#{CompanyAddress})
+    </insert>
+
+    <insert id="batchInsertCompany" useGeneratedKeys="true" keyProperty="CompanyId" keyColumn="company_id">
+        insert into t_company (create_time,update_time,company_name,company_address) values
+        <foreach collection="list" item="item" separator=",">
+            (now(),now(),#{item.CompanyName},#{item.CompanyAddress})
+        </foreach>
+    </insert>
+
+    <select id="selectByCompanyName" resultMap="companyResult">
+        select 
+            <include refid="companyColumns"><property name="alias" value="c1"/></include>
+        from t_company c1
+        where
+        company_name like concat('%',#{companyName},'%')
+    </select>
+
+    <select id="selectByCompanyName2" resultType="String">
+        select
+        company_name
+        from t_company c1
+        where
+        company_name like concat('%',#{companyName},'%')
+    </select>
+
+    <select id="selectByMap" resultMap="companyResult">
+        select
+        <include refid="companyColumns"><property name="alias" value="c1"/></include>
+        from t_company c1
+        where 1 = 1
+        <if test="selectMap.companyName != null">
+            and company_name like concat('%',#{selectMap.companyName},'%')
+        </if>
+        <if test="selectMap.CompanyIds != null">
+            and company_id in
+            <foreach collection="selectMap.CompanyIds" index="index" item="CompanyIds" open="(" separator="," close=")">
+                #{CompanyIds}
+            </foreach>
+        </if>
+        <if test="selectMap.CreateDate != null">
+            and date_format(create_time,'%Y-%m-%d') >= #{selectMap.CreateDate}
+        </if>
+        order by create_time
+    </select>
+</mapper>

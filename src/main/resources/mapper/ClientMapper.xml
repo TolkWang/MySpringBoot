@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.ClientMapper">
+    <resultMap id="ClientResult" type="Client">
+        <id property="ClientId" column="client_id" />
+        <result property="ClientName" column="client_name" />
+        <result property="ClientAge" column="client_age" />
+        <result property="ClientDefaultPrice" column="client_default_price" />
+        <result property="CreateTime" column="create_time" />
+        <result property="UpdateTime" column="update_time" />
+        <result property="CompanyId" column="company_id" />
+        <result property="Delete" column="is_deleted" />
+    </resultMap>
+
+    <sql id="clientColumns">
+        create_time,update_time,client_name,client_age,client_default_price,is_deleted,company_id
+    </sql>
+
+    <insert id="insertClient">
+        insert into t_client (create_time,update_time,client_name,client_age,client_default_price,is_deleted,company_id)
+        values (now(),now(),#{ClientName},#{ClientAge},#{ClientDefaultPrice},#{Delete},#{CompanyId})
+    </insert>
+
+</mapper>

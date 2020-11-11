@@ -100,6 +100,8 @@ public class UserController {
 
     @GetMapping("/queryTest")
     public Result queryOrder() {
+
+        System.out.println("1234");
         return ResultGenerator.genSuccessResult(userService.getUser3());
     }
 
