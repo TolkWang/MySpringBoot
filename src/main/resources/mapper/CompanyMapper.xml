@@ -58,4 +58,35 @@
         </if>
         order by create_time
     </select>
+
+    <update id="updateById" parameterType="Company">
+        update t_company
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="CompanyName != null">
+                company_name = #{CompanyName},
+            </if>
+            <if test="CompanyAddress != null">
+                company_address = #{CompanyAddress},
+            </if>
+            update_time = now(),
+        </trim>
+        WHERE
+        company_id = #{CompanyId}
+    </update>
+
+    <select id="selectByChoose" resultMap="companyResult">
+        <bind name="pattern" value="companyName" />
+        select
+        <include refid="companyColumns"><property name="alias" value="c1"/></include>
+        from t_company c1
+        where 1 = 1
+        <choose>
+            <when test="pattern != null and pattern.length > 0">
+                and company_name like concat('%',#{pattern},'%')
+            </when>
+            <otherwise>
+                and company_id > 1
+            </otherwise>
+        </choose>
+    </select>
 </mapper>

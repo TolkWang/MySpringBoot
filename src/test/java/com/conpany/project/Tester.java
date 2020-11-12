@@ -33,7 +33,7 @@ import java.util.Map;
 public class Tester {
 
     @Autowired
-    CompanyService service;
+    CompanyService companyService;
 
     @Autowired
     UserService userService;
@@ -44,14 +44,12 @@ public class Tester {
     @Test
     public void test1() {
 
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("companyName","pple");
-        Integer[] ids = {1,2,3,4,5,6,21};
-        map.put("CompanyIds",ids);
-        map.put("CreateDate","2020-11-11");
+        Company company = new Company();
+        company.setCompanyId(BigInteger.valueOf(20));
+        company.setCompanyAddress("London");
+        company.setCompanyName("banana");
 
-        List<Company> companies = service.selectByMap(map);
-        System.out.println(companies.toString());
+        System.out.println(companyService.selectByChoose("pp"));
         //companies.forEach(company -> System.out.println(company.getCompanyId()));
     }
 
@@ -65,13 +63,17 @@ public class Tester {
 
     @Test
     public void test3() {
-        Client client = new Client();
-        client.setClientName("小白");
-        client.setClientAge(25);
-        client.setClientDefaultPrice(new BigDecimal("99.98"));
-        client.setCompanyId(BigInteger.valueOf(22));
-        client.setDelete(true);
-        clientService.insertClient(client);
+//        Client client = new Client();
+//        client.setClientName("小红");
+//        client.setClientAge(28);
+//        client.setClientDefaultPrice(new BigDecimal("99.98"));
+//        client.setCompanyId(BigInteger.valueOf(22));
+//        client.setDelete(true);
+//        clientService.insertClient(client);
+        HashMap<BigInteger, Client> map = clientService.queryClientAndCompany2(1);
+        map.entrySet().forEach(e -> System.out.println(e.getKey()));
+        System.out.println(map.size());
+
     }
 
 

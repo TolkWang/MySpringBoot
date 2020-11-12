@@ -17,9 +17,13 @@ public interface CompanyMapper {
 
     void batchInsertCompany(List<Company> companies);
 
-    List<Company> selectByCompanyName(@Param("companyName") String companyName);
+    List<Company> selectByCompanyName(@Param("companyName")String companyName);
 
-    List<String> selectByCompanyName2(@Param("companyName") String companyName);
+    List<String> selectByCompanyName2(@Param("companyName")String companyName);
 
-    List<Company> selectByMap(@Param("selectMap") HashMap<String,Object> map);
+    List<Company> selectByMap(@Param("selectMap")HashMap<String,Object> map);
+
+    void updateById(Company company);
+
+    List<Company> selectByChoose(@Param("companyName")String companyName);
 }

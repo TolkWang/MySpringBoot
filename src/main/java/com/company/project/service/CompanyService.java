@@ -20,4 +20,8 @@ public interface CompanyService {
     List<String> selectByCompanyName2(String companyName);
 
     List<Company> selectByMap(HashMap<String,Object> map);
+
+    void updateById(Company company);
+
+    List<Company> selectByChoose(String companyName);
 }

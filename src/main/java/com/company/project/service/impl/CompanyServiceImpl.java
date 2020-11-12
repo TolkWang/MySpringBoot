@@ -45,4 +45,14 @@ public class CompanyServiceImpl implements CompanyService {
     public List<Company> selectByMap(HashMap<String, Object> map) {
         return companyMapper.selectByMap(map);
     }
+
+    @Override
+    public void updateById(Company company) {
+        companyMapper.updateById(company);
+    }
+
+    @Override
+    public List<Company> selectByChoose(String companyName) {
+        return companyMapper.selectByChoose(companyName);
+    }
 }

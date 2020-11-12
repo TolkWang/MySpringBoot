@@ -12,6 +12,52 @@
         <result property="Delete" column="is_deleted" />
     </resultMap>
 
+    <resultMap id="ClientCompanyResult" type="HashMap">
+        <id property="ClientId" column="client_id" />
+        <result property="ClientName" column="client_name" />
+        <result property="ClientAge" column="client_age" />
+        <result property="ClientDefaultPrice" column="client_default_price" />
+        <result property="CreateTime" column="create_time" />
+        <association property="Company" column="company_id" javaType="HashMap">
+            <id property="CompanyId" column="company_id" />
+            <result property="CompanyName" column="company_name" />
+            <result property="CompanyAddress" column="company_address" />
+            <result property="CreateTime" column="create_time2" />
+        </association>
+    </resultMap>
+
+    <resultMap id="ClientCompanyTypeResult2" type="HashMap">
+        <id property="ClientId" column="client_id" />
+        <result property="ClientName" column="client_name" />
+        <result property="ClientAge" column="client_age" />
+        <result property="ClientDefaultPrice" column="client_default_price" />
+        <result property="CreateTime" column="create_time" />
+        <association property="Company" column="company_id" javaType="HashMap">
+            <id property="CompanyId" column="company_id" />
+            <result property="CompanyName" column="company_name" />
+            <result property="CompanyAddress" column="company_address" />
+            <result property="CreateTime" column="create_time2" />
+            <collection property="Type" ofType="map" javaType="list">
+                <result property="TypeName" column="type_name" />
+            </collection>
+        </association>
+    </resultMap>
+
+    <resultMap id="ClientCompanyTypeResult3" type="HashMap">
+        <id property="ClientId" column="client_id" />
+        <result property="ClientName" column="client_name" />
+        <result property="ClientAge" column="client_age" />
+        <result property="ClientDefaultPrice" column="client_default_price" />
+        <result property="CreateTime" column="create_time" />
+        <association property="Company" column="company_id" javaType="HashMap">
+            <id property="CompanyId" column="company_id" />
+            <result property="CompanyName" column="company_name" />
+            <result property="CompanyAddress" column="company_address" />
+            <result property="CreateTime" column="create_time2" />
+            <collection property="Type" ofType="map" javaType="list" select="queryType" column="company_id"></collection>
+        </association>
+    </resultMap>
+
     <sql id="clientColumns">
         create_time,update_time,client_name,client_age,client_default_price,is_deleted,company_id
     </sql>
@@ -21,4 +67,47 @@
         values (now(),now(),#{ClientName},#{ClientAge},#{ClientDefaultPrice},#{Delete},#{CompanyId})
     </insert>
 
+    <select id="queryClientAndCompany" resultMap="ClientCompanyResult">
+        select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_name,cm.company_address,cm.company_id,
+        DATE_FORMAT(cm.create_time,'%Y-%m-%d') create_time2
+        from t_client c
+        inner join t_company cm on c.company_id = cm.company_id
+        where c.client_id = #{clientId}
+    </select>
+
+    <select id="queryClientAndCompany2" resultType="HashMap">
+        select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_id,cm.company_name,cm.company_address
+        from t_client c
+        inner join t_company cm on c.company_id = cm.company_id
+        where c.client_id = #{clientId}
+    </select>
+
+    <select id="queryClientAndCompany3" resultMap="ClientCompanyResult">
+        select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_name,cm.company_address,cm.company_id,
+        DATE_FORMAT(cm.create_time,'%Y-%m-%d') create_time2
+        from t_client c
+        inner join t_company cm on c.company_id = cm.company_id
+    </select>
+
+<!--    <select id="queryClientAndCompany4" resultMap="ClientCompanyTypeResult2">-->
+<!--        select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_name,cm.company_address,cm.company_id,-->
+<!--        DATE_FORMAT(cm.create_time,'%Y-%m-%d') create_time2,tt.type_name-->
+<!--        from t_client c-->
+<!--        inner join t_company cm on c.company_id = cm.company_id-->
+<!--        left join t_company_type tct on cm.company_id = tct.company_id-->
+<!--        left join t_type tt on tct.type_id = tt.type_id-->
+<!--    </select>-->
+
+    <select id="queryClientAndCompany4" resultMap="ClientCompanyTypeResult3">
+        select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_name,cm.company_address,cm.company_id,
+        DATE_FORMAT(cm.create_time,'%Y-%m-%d') create_time2
+        from t_client c
+        inner join t_company cm on c.company_id = cm.company_id
+    </select>
+
+    <select id="queryType" resultType="HashMap">
+        select tt.type_name from t_company_type tct
+        inner join t_type tt on tct.type_id = tt.type_id
+        where tct.company_id = #{company_id}
+    </select>
 </mapper>

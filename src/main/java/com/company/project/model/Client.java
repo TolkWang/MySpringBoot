@@ -22,4 +22,5 @@ public class Client {
     private Timestamp UpdateTime;
     private BigInteger CompanyId;
     private Boolean Delete;
+    private Company Company;
 }

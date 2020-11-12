@@ -2,7 +2,9 @@ package com.company.project.web;
 
 import com.company.project.core.Result;
 import com.company.project.core.ResultGenerator;
+import com.company.project.model.Client;
 import com.company.project.model.User;
+import com.company.project.service.ClientService;
 import com.company.project.service.UserService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -11,10 +13,13 @@ import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.math.BigInteger;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -25,6 +30,20 @@ import java.util.List;
 public class UserController {
     @Resource
     private UserService userService;
+
+    @Autowired
+    private ClientService clientService;
+
+    @GetMapping("/getClient/{id}")
+    public Result getClient(@PathVariable int id) {
+        HashMap<BigInteger, Client> map = clientService.queryClientAndCompany(id);
+        return ResultGenerator.genSuccessResult(map);
+    }
+
+    @GetMapping("/getClient2")
+    public Result getClient2() {
+        return ResultGenerator.genSuccessResult(clientService.queryClientAndCompany4());
+    }
 
     @PostMapping("/saveNow")
     public Result saveNow(@RequestBody User user) {
