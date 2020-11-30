@@ -1,0 +1,62 @@
+2020-11-15 20:30:01.335 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 3420 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-11-15 20:30:01.339 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-11-15 20:30:02.350 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-11-15 20:30:02.384 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 29ms. Found 0 Elasticsearch repository interfaces.
+2020-11-15 20:30:02.389 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-11-15 20:30:02.394 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-11-15 20:30:02.533 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-11-15 20:30:02.800 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$18cb3a3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:02.871 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$537748ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:02.903 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:02.932 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:02.937 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:03.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:03.365 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:03.367 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:03.372 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:03.390 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:03.825 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 20:30:04.056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-11-15 20:30:04.066 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-15 20:30:04.067 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-11-15 20:30:04.067 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-15 20:30:04.179 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-11-15 20:30:04.180 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2758 ms
+2020-11-15 20:30:04.235 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-11-15 20:30:04.715 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-11-15 20:30:04.716 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-11-15 20:30:05.012 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-15 20:30:05.313 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-15 20:30:05.511 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-11-15 20:30:05.561 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-11-15 20:30:05.583 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-11-15 20:30:05.630 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-11-15 20:30:05.807 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-11-15 20:30:05.808 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-11-15 20:30:05.810 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-11-15 20:30:05.812 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-11-15 20:30:05.813 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-11-15 20:30:05.825 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-11-15 20:30:05.829 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-11-15 20:30:05.832 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-11-15 20:30:05.835 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-11-15 20:30:05.858 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-11-15 20:30:05.882 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-11-15 20:30:05.898 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-15 20:30:05.902 [main] INFO  com.company.project.Application.logStarted - Started Application in 5.374 seconds (JVM running for 6.708)
+2020-11-15 20:30:13.833 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 20:30:13.834 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-11-15 20:30:13.841 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 7 ms
+2020-11-15 20:30:14.094 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-11-15 20:30:14.112 [http-nio-8080-exec-2] DEBUG c.c.p.d.C.queryClientAndCompany4.debug - ==>  Preparing: select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_name,cm.company_address,cm.company_id, DATE_FORMAT(cm.create_time,'%Y-%m-%d') create_time2 from t_client c inner join t_company cm on c.company_id = cm.company_id 
+2020-11-15 20:30:14.245 [http-nio-8080-exec-2] DEBUG c.c.p.d.C.queryClientAndCompany4.debug - ==> Parameters: 
+2020-11-15 20:30:14.280 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====>  Preparing: select tt.type_name from t_company_type tct inner join t_type tt on tct.type_id = tt.type_id where tct.company_id = ? 
+2020-11-15 20:30:14.461 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====> Parameters: 21(BigDecimal)
+2020-11-15 20:30:14.463 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - <====      Total: 2
+2020-11-15 20:30:14.466 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====>  Preparing: select tt.type_name from t_company_type tct inner join t_type tt on tct.type_id = tt.type_id where tct.company_id = ? 
+2020-11-15 20:30:14.467 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====> Parameters: 22(BigDecimal)
+2020-11-15 20:30:14.468 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - <====      Total: 4
+2020-11-15 20:30:14.471 [http-nio-8080-exec-2] DEBUG c.c.p.d.C.queryClientAndCompany4.debug - <==      Total: 3
+2020-11-15 20:33:15.649 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-11-15 20:33:15.653 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-11-15 20:33:15.666 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed

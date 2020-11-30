@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2020/11/15 21:01
  * @desc
  */
-//@Configuration
+@Configuration
 public class CustomizeScheduleConfigTask {
     /**
      * 定时任务

@@ -43,13 +43,12 @@ public class Tester {
 
     @Test
     public void test1() {
-
         Company company = new Company();
-        company.setCompanyId(BigInteger.valueOf(20));
         company.setCompanyAddress("London");
         company.setCompanyName("banana");
-
-        System.out.println(companyService.selectByChoose("pp"));
+        companyService.insertCompany(company);
+        System.out.println(company.getCompanyId());
+        //System.out.println();
         //companies.forEach(company -> System.out.println(company.getCompanyId()));
     }
 
