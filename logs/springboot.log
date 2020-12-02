@@ -1,31 +1,38 @@
-2020-11-30 13:14:26.600 [main] INFO  com.company.project.codeReview.test.logStarting - Starting test on DESKTOP-SV7UBO9 with PID 10552 (started by Wang in D:\Work\IDEAWork\supermallapi)
-2020-11-30 13:14:26.724 [main] INFO  com.company.project.codeReview.test.logStartupProfileInfo - The following profiles are active: dev
-2020-11-30 13:14:28.519 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:14:28.589 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 60ms. Found 0 Elasticsearch repository interfaces.
-2020-11-30 13:14:28.598 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:14:28.617 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 17ms. Found 0 Reactive Elasticsearch repository interfaces.
-2020-11-30 13:14:28.910 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-11-30 13:14:29.561 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$4133fb75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:29.673 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$7be009e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:29.777 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:29.816 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:29.826 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:30.287 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:30.383 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:30.387 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:30.395 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:30.422 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:31.151 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:14:32.111 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
-2020-11-30 13:14:32.126 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
-2020-11-30 13:14:32.730 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-30 13:14:33.559 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-11-30 13:14:33.997 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2020-11-30 13:14:34.207 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
-2020-11-30 13:14:34.232 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-11-30 13:14:34.232 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
-2020-11-30 13:14:34.234 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
-2020-11-30 13:14:34.235 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2020-12-02 13:02:03.291 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 9532 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 13:02:03.298 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 13:02:04.729 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:02:04.763 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 31ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 13:02:04.763 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:02:04.763 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 4ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 13:02:04.926 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 13:02:05.211 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$f3b04ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.290 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$49e7135e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.359 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.390 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.390 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.844 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.913 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.913 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.913 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:05.929 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:06.277 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:02:06.546 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 13:02:06.569 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:02:06.570 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 13:02:06.570 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 13:02:06.687 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 13:02:06.687 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3303 ms
+2020-12-02 13:02:06.746 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 13:02:07.218 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 13:02:07.218 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 13:02:07.579 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 13:02:07.922 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 13:02:08.141 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 13:02:08.256 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 13:02:08.272 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 13:02:08.273 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 13:02:08.274 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 13:02:08.274 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -33,61 +40,84 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2020-11-30 13:14:34.236 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-11-30 13:14:34.236 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
-2020-11-30 13:14:34.236 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@857f1a7
-2020-11-30 13:14:34.264 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
-2020-11-30 13:14:34.347 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
-2020-11-30 13:14:34.382 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
-2020-11-30 13:14:34.459 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
-2020-11-30 13:14:34.704 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
-2020-11-30 13:14:34.706 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
-2020-11-30 13:14:34.708 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
-2020-11-30 13:14:34.710 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
-2020-11-30 13:14:34.712 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
-2020-11-30 13:14:34.726 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
-2020-11-30 13:14:34.731 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
-2020-11-30 13:14:34.734 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
-2020-11-30 13:14:34.739 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
-2020-11-30 13:14:34.766 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
-2020-11-30 13:14:34.982 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
-2020-11-30 13:14:34.982 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2020-11-30 13:14:35.003 [main] INFO  com.company.project.codeReview.test.logStarted - Started test in 9.279 seconds (JVM running for 10.837)
-2020-11-30 13:14:35.314 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:14:35.315 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
-2020-11-30 13:14:35.317 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
-2020-11-30 13:14:35.318 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2020-11-30 13:14:35.318 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:14:35.319 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2020-11-30 13:14:35.322 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
-2020-11-30 13:14:59.942 [main] INFO  com.company.project.codeReview.test.logStarting - Starting test on DESKTOP-SV7UBO9 with PID 2316 (started by Wang in D:\Work\IDEAWork\supermallapi)
-2020-11-30 13:14:59.944 [main] INFO  com.company.project.codeReview.test.logStartupProfileInfo - The following profiles are active: dev
-2020-11-30 13:15:01.270 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:15:01.313 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 38ms. Found 0 Elasticsearch repository interfaces.
-2020-11-30 13:15:01.319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:15:01.326 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
-2020-11-30 13:15:01.515 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-11-30 13:15:02.243 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$a057e45d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.359 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$db03f2cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.434 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.475 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.486 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.884 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.971 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.975 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:02.982 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:03.020 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:03.688 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:15:04.605 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
-2020-11-30 13:15:04.621 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
-2020-11-30 13:15:05.120 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-30 13:15:05.936 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-11-30 13:15:06.374 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2020-11-30 13:15:06.587 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
-2020-11-30 13:15:06.609 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-11-30 13:15:06.609 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
-2020-11-30 13:15:06.611 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
-2020-11-30 13:15:06.613 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2020-12-02 13:02:08.275 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 13:02:08.275 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 13:02:08.275 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@341964d0
+2020-12-02 13:02:08.283 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 13:02:08.332 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 13:02:08.361 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 13:02:08.420 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 13:02:08.600 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 13:02:08.600 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 13:02:08.600 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 13:02:08.600 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 13:02:08.600 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 13:02:08.615 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 13:02:08.626 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 13:02:08.626 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 13:02:08.626 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 13:02:08.657 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 13:02:08.657 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 13:02:08.657 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 13:02:08.673 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:02:08.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 13:02:08.704 [main] INFO  com.company.project.Application.logStarted - Started Application in 6.007 seconds (JVM running for 8.395)
+2020-12-02 13:02:45.533 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 13:02:45.534 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 13:02:45.546 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 12 ms
+2020-12-02 13:02:45.857 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 13:02:45.876 [http-nio-8080-exec-2] DEBUG c.c.p.d.C.queryClientAndCompany4.debug - ==>  Preparing: select c.client_id,c.client_name,c.client_age,c.client_default_price,DATE_FORMAT(c.create_time,'%Y-%m-%d') create_time,cm.company_name,cm.company_address,cm.company_id, DATE_FORMAT(cm.create_time,'%Y-%m-%d') create_time2 from t_client c inner join t_company cm on c.company_id = cm.company_id 
+2020-12-02 13:02:46.170 [http-nio-8080-exec-2] DEBUG c.c.p.d.C.queryClientAndCompany4.debug - ==> Parameters: 
+2020-12-02 13:02:46.205 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====>  Preparing: select tt.type_name from t_company_type tct inner join t_type tt on tct.type_id = tt.type_id where tct.company_id = ? 
+2020-12-02 13:02:46.229 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====> Parameters: 21(BigDecimal)
+2020-12-02 13:02:46.234 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - <====      Total: 2
+2020-12-02 13:02:46.236 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====>  Preparing: select tt.type_name from t_company_type tct inner join t_type tt on tct.type_id = tt.type_id where tct.company_id = ? 
+2020-12-02 13:02:46.237 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - ====> Parameters: 22(BigDecimal)
+2020-12-02 13:02:46.239 [http-nio-8080-exec-2] DEBUG c.c.p.dao.ClientMapper.queryType.debug - <====      Total: 4
+2020-12-02 13:02:46.241 [http-nio-8080-exec-2] DEBUG c.c.p.d.C.queryClientAndCompany4.debug - <==      Total: 3
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 13:03:09.229 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 13:03:09.251 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
+2020-12-02 13:43:56.801 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 12504 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 13:43:56.805 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 13:43:58.417 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:43:58.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 41ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 13:43:58.471 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:43:58.478 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 13:43:58.747 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 13:43:59.114 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$2b143642] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.231 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$65c044b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.281 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.318 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.324 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.822 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.889 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.891 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.896 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:43:59.915 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:44:00.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:44:00.554 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 13:44:00.570 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:44:00.572 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 13:44:00.573 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 13:44:00.733 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 13:44:00.734 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3837 ms
+2020-12-02 13:44:00.795 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 13:44:01.254 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 13:44:01.256 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 13:44:01.567 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 13:44:01.893 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 13:44:02.100 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 13:44:02.216 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 13:44:02.229 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 13:44:02.230 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 13:44:02.231 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 13:44:02.232 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -95,61 +125,286 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2020-11-30 13:15:06.613 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-11-30 13:15:06.613 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
-2020-11-30 13:15:06.613 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@29d33f1
-2020-11-30 13:15:06.643 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
-2020-11-30 13:15:06.742 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
-2020-11-30 13:15:06.824 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
-2020-11-30 13:15:06.909 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
-2020-11-30 13:15:07.170 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
-2020-11-30 13:15:07.171 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
-2020-11-30 13:15:07.175 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
-2020-11-30 13:15:07.177 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
-2020-11-30 13:15:07.180 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
-2020-11-30 13:15:07.200 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
-2020-11-30 13:15:07.205 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
-2020-11-30 13:15:07.209 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
-2020-11-30 13:15:07.216 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
-2020-11-30 13:15:07.247 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
-2020-11-30 13:15:07.262 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
-2020-11-30 13:15:07.263 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2020-11-30 13:15:07.506 [main] INFO  com.company.project.codeReview.test.logStarted - Started test in 8.484 seconds (JVM running for 10.105)
-2020-11-30 13:15:07.770 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:15:07.771 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
-2020-11-30 13:15:07.772 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
-2020-11-30 13:15:07.772 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2020-11-30 13:15:07.772 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:15:07.773 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2020-11-30 13:15:07.781 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
-2020-11-30 13:31:02.728 [main] INFO  com.company.project.codeReview.test.logStarting - Starting test on DESKTOP-SV7UBO9 with PID 10048 (started by Wang in D:\Work\IDEAWork\supermallapi)
-2020-11-30 13:31:02.730 [main] INFO  com.company.project.codeReview.test.logStartupProfileInfo - The following profiles are active: dev
-2020-11-30 13:31:04.154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:31:04.204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 41ms. Found 0 Elasticsearch repository interfaces.
-2020-11-30 13:31:04.209 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:31:04.217 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 7ms. Found 0 Reactive Elasticsearch repository interfaces.
-2020-11-30 13:31:04.435 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-11-30 13:31:05.069 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$a486de7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.184 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$df32eceb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.260 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.298 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.308 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.786 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.961 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.967 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:05.973 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:06.012 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:06.775 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:31:07.670 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
-2020-11-30 13:31:07.686 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
-2020-11-30 13:31:08.206 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-30 13:31:09.014 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-11-30 13:31:09.453 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2020-11-30 13:31:09.649 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
-2020-11-30 13:31:09.673 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-11-30 13:31:09.674 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
-2020-11-30 13:31:09.676 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
-2020-11-30 13:31:09.677 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2020-12-02 13:44:02.232 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 13:44:02.232 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 13:44:02.232 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c5e4bfa
+2020-12-02 13:44:02.241 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 13:44:02.296 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 13:44:02.322 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 13:44:02.380 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 13:44:02.590 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 13:44:02.591 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 13:44:02.592 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 13:44:02.593 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 13:44:02.594 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 13:44:02.610 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 13:44:02.614 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 13:44:02.616 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 13:44:02.620 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 13:44:02.643 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 13:44:02.655 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 13:44:02.655 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 13:44:02.673 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:44:02.693 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 13:44:02.696 [main] INFO  com.company.project.Application.logStarted - Started Application in 6.46 seconds (JVM running for 7.941)
+2020-12-02 13:45:15.915 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 13:45:15.916 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 13:45:15.924 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 8 ms
+2020-12-02 13:45:16.428 [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 13:45:16.431 [http-nio-8080-exec-3] DEBUG c.c.p.d.E.insertEmployee.debug - ==>  Preparing: INSERT INTO employees ( birth_date, first_name, last_name, gender, hire_date ) VALUES ( NOW(), ?,?,#gender,NOW()) 
+2020-12-02 13:45:16.549 [http-nio-8080-exec-3] ERROR c.c.p.configurer.WebMvcConfigurer.resolveException - 接口 [/employee/insertEmployee] 出现异常，方法：com.company.project.web.EmployeeController.insertEmployee，异常摘要：
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+### SQL: INSERT INTO employees (             birth_date,             first_name,             last_name,             gender,             hire_date         )         VALUES             (                 NOW(),                 ?,?,#gender,NOW())
+### Cause: java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW()); nested exception is java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+### SQL: INSERT INTO employees (             birth_date,             first_name,             last_name,             gender,             hire_date         )         VALUES             (                 NOW(),                 ?,?,#gender,NOW())
+### Cause: java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW()); nested exception is java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy86.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy96.insertEmployee(Unknown Source)
+	at com.company.project.service.impl.EmployeeServiceImpl.insertEmployee(EmployeeServiceImpl.java:22)
+	at com.company.project.web.EmployeeController.insertEmployee(EmployeeController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, comment not allow : INSERT INTO employees (
+            birth_date,
+            first_name,
+            last_name,
+            gender,
+            hire_date
+        )
+        VALUES
+            (
+                NOW(),
+                ?,?,#gender,NOW())
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:800)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:251)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:929)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy130.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy129.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 69 common frames omitted
+2020-12-02 13:46:10.023 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 13:46:10.023 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 13:46:10.024 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 13:46:10.024 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 13:46:10.024 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 13:46:10.025 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 13:46:10.027 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 13:46:10.040 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
+2020-12-02 13:46:14.431 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 12480 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 13:46:14.452 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 13:46:15.470 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:46:15.507 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 31ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 13:46:15.512 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:46:15.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 13:46:15.670 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 13:46:15.945 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$7d239547] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.036 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$b7cfa3b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.068 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.093 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.099 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.471 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.530 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.532 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.537 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.554 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:16.896 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:46:17.135 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 13:46:17.145 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:46:17.146 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 13:46:17.146 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 13:46:17.259 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 13:46:17.260 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2726 ms
+2020-12-02 13:46:17.315 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 13:46:17.798 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 13:46:17.799 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 13:46:18.155 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 13:46:18.559 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 13:46:18.813 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 13:46:18.957 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 13:46:18.972 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 13:46:18.972 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 13:46:18.974 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 13:46:18.975 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -157,61 +412,78 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2020-11-30 13:31:09.677 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-11-30 13:31:09.677 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
-2020-11-30 13:31:09.677 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@38363e96
-2020-11-30 13:31:09.706 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
-2020-11-30 13:31:09.789 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
-2020-11-30 13:31:09.823 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
-2020-11-30 13:31:09.899 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
-2020-11-30 13:31:10.137 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
-2020-11-30 13:31:10.138 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
-2020-11-30 13:31:10.140 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
-2020-11-30 13:31:10.142 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
-2020-11-30 13:31:10.144 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
-2020-11-30 13:31:10.158 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
-2020-11-30 13:31:10.162 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
-2020-11-30 13:31:10.166 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
-2020-11-30 13:31:10.171 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
-2020-11-30 13:31:10.201 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
-2020-11-30 13:31:10.216 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
-2020-11-30 13:31:10.217 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2020-11-30 13:31:10.423 [main] INFO  com.company.project.codeReview.test.logStarted - Started test in 8.558 seconds (JVM running for 10.151)
-2020-11-30 13:31:10.682 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:31:10.684 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
-2020-11-30 13:31:10.684 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
-2020-11-30 13:31:10.685 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2020-11-30 13:31:10.685 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:31:10.686 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2020-11-30 13:31:10.689 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
-2020-11-30 13:33:03.694 [main] INFO  com.company.project.codeReview.test.logStarting - Starting test on DESKTOP-SV7UBO9 with PID 14072 (started by Wang in D:\Work\IDEAWork\supermallapi)
-2020-11-30 13:33:03.697 [main] INFO  com.company.project.codeReview.test.logStartupProfileInfo - The following profiles are active: dev
-2020-11-30 13:33:04.954 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:33:05.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 40ms. Found 0 Elasticsearch repository interfaces.
-2020-11-30 13:33:05.006 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:33:05.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
-2020-11-30 13:33:05.214 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-11-30 13:33:05.845 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$c88e71bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:05.957 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$33a802a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.034 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.073 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.084 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.488 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.573 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.578 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.583 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:06.619 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:07.321 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:33:08.239 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
-2020-11-30 13:33:08.254 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
-2020-11-30 13:33:08.801 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-30 13:33:09.628 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-11-30 13:33:10.059 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2020-11-30 13:33:10.259 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
-2020-11-30 13:33:10.280 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-11-30 13:33:10.281 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
-2020-11-30 13:33:10.282 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
-2020-11-30 13:33:10.284 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2020-12-02 13:46:18.975 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 13:46:18.975 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 13:46:18.975 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@63f2d024
+2020-12-02 13:46:18.988 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 13:46:19.052 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 13:46:19.084 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 13:46:19.150 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 13:46:19.384 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 13:46:19.386 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 13:46:19.387 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 13:46:19.388 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 13:46:19.390 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 13:46:19.403 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 13:46:19.407 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 13:46:19.409 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 13:46:19.414 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 13:46:19.440 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 13:46:19.457 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 13:46:19.458 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 13:46:19.473 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:46:19.497 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 13:46:19.501 [main] INFO  com.company.project.Application.logStarted - Started Application in 5.854 seconds (JVM running for 7.15)
+2020-12-02 13:46:23.611 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 13:46:23.611 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 13:46:23.619 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 8 ms
+2020-12-02 13:46:24.068 [http-nio-8080-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 13:46:24.073 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - ==>  Preparing: INSERT INTO employees ( birth_date, first_name, last_name, gender, hire_date ) VALUES ( NOW(), ?,?,?,NOW()) 
+2020-12-02 13:46:24.185 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - ==> Parameters: 酷酷(String), 汪(String), 1(String)
+2020-12-02 13:46:24.193 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - <==    Updates: 1
+2020-12-02 13:48:50.621 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 13:48:50.622 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 13:48:50.622 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 13:48:50.623 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 13:48:50.623 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 13:48:50.623 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 13:48:50.627 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 13:48:50.639 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
+2020-12-02 13:48:57.051 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 9052 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 13:48:57.055 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 13:48:58.166 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:48:58.203 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 31ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 13:48:58.208 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 13:48:58.214 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 13:48:58.371 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 13:48:58.637 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$b8a443d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:58.728 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$f3505247] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:58.760 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:58.786 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:58.792 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.141 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.203 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.206 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.209 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.228 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.563 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 13:48:59.794 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 13:48:59.804 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:48:59.805 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 13:48:59.805 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 13:48:59.919 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 13:48:59.920 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2760 ms
+2020-12-02 13:48:59.979 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 13:49:00.455 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 13:49:00.456 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 13:49:00.769 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 13:49:01.094 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 13:49:01.301 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 13:49:01.415 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 13:49:01.428 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 13:49:01.428 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 13:49:01.429 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 13:49:01.430 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -219,61 +491,78 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2020-11-30 13:33:10.285 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-11-30 13:33:10.285 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
-2020-11-30 13:33:10.285 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@792eeae6
-2020-11-30 13:33:10.314 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
-2020-11-30 13:33:10.411 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
-2020-11-30 13:33:10.444 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
-2020-11-30 13:33:10.517 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
-2020-11-30 13:33:10.755 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
-2020-11-30 13:33:10.757 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
-2020-11-30 13:33:10.758 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
-2020-11-30 13:33:10.760 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
-2020-11-30 13:33:10.762 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
-2020-11-30 13:33:10.776 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
-2020-11-30 13:33:10.781 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
-2020-11-30 13:33:10.784 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
-2020-11-30 13:33:10.790 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
-2020-11-30 13:33:10.816 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
-2020-11-30 13:33:10.831 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
-2020-11-30 13:33:10.831 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2020-11-30 13:33:11.095 [main] INFO  com.company.project.codeReview.test.logStarted - Started test in 8.199 seconds (JVM running for 9.896)
-2020-11-30 13:33:11.363 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:33:11.365 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
-2020-11-30 13:33:11.365 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
-2020-11-30 13:33:11.366 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2020-11-30 13:33:11.367 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:33:11.368 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2020-11-30 13:33:11.371 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
-2020-11-30 13:35:19.428 [main] INFO  com.company.project.codeReview.test.logStarting - Starting test on DESKTOP-SV7UBO9 with PID 9024 (started by Wang in D:\Work\IDEAWork\supermallapi)
-2020-11-30 13:35:19.430 [main] INFO  com.company.project.codeReview.test.logStartupProfileInfo - The following profiles are active: dev
-2020-11-30 13:35:21.021 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:35:21.065 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 38ms. Found 0 Elasticsearch repository interfaces.
-2020-11-30 13:35:21.072 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:35:21.079 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
-2020-11-30 13:35:21.308 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-11-30 13:35:22.101 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$86d0ce5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:22.250 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$c17cdcce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:22.354 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:22.390 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:22.400 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:22.974 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:23.110 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:23.116 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:23.121 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:23.153 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:23.885 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:24.823 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
-2020-11-30 13:35:24.836 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
-2020-11-30 13:35:25.386 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-30 13:35:26.254 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-11-30 13:35:26.636 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2020-11-30 13:35:26.842 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
-2020-11-30 13:35:26.864 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-11-30 13:35:26.864 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
-2020-11-30 13:35:26.866 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
-2020-11-30 13:35:26.868 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2020-12-02 13:49:01.430 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 13:49:01.430 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 13:49:01.431 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7535f28
+2020-12-02 13:49:01.440 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 13:49:01.493 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 13:49:01.517 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 13:49:01.572 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 13:49:01.762 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 13:49:01.763 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 13:49:01.764 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 13:49:01.783 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 13:49:01.785 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 13:49:01.801 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 13:49:01.805 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 13:49:01.808 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 13:49:01.812 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 13:49:01.833 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 13:49:01.844 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 13:49:01.844 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 13:49:01.860 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 13:49:01.879 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 13:49:01.882 [main] INFO  com.company.project.Application.logStarted - Started Application in 5.574 seconds (JVM running for 6.829)
+2020-12-02 13:49:08.762 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 13:49:08.762 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 13:49:08.770 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 8 ms
+2020-12-02 13:49:09.255 [http-nio-8080-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 13:49:09.259 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - ==>  Preparing: INSERT INTO employees ( birth_date, first_name, last_name, gender, hire_date ) VALUES ( NOW(), ?,?,?,NOW()) 
+2020-12-02 13:49:09.367 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - ==> Parameters: 酷酷2(String), 汪2(String), 1(String)
+2020-12-02 13:49:09.374 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - <==    Updates: 1
+2020-12-02 14:07:11.919 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:07:11.920 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 14:07:11.921 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 14:07:11.921 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 14:07:11.921 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:07:11.921 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 14:07:11.924 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 14:07:11.937 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
+2020-12-02 14:07:19.906 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 7920 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 14:07:19.910 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 14:07:21.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 14:07:21.040 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 34ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 14:07:21.045 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 14:07:21.051 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 14:07:21.207 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 14:07:21.470 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$e4f5947e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:21.561 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$1fa1a2ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:21.595 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:21.621 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:21.627 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:21.988 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:22.050 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:22.053 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:22.058 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:22.077 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:22.414 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:07:22.663 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 14:07:22.673 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 14:07:22.673 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 14:07:22.674 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 14:07:22.787 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 14:07:22.788 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2789 ms
+2020-12-02 14:07:22.845 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 14:07:23.357 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 14:07:23.358 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 14:07:23.665 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 14:07:23.993 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 14:07:24.197 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 14:07:24.313 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 14:07:24.327 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 14:07:24.327 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 14:07:24.328 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 14:07:24.329 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -281,61 +570,148 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2020-11-30 13:35:26.868 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-11-30 13:35:26.869 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
-2020-11-30 13:35:26.869 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7352418c
-2020-11-30 13:35:26.899 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
-2020-11-30 13:35:26.984 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
-2020-11-30 13:35:27.017 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
-2020-11-30 13:35:27.091 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
-2020-11-30 13:35:27.316 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
-2020-11-30 13:35:27.318 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
-2020-11-30 13:35:27.324 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
-2020-11-30 13:35:27.329 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
-2020-11-30 13:35:27.331 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
-2020-11-30 13:35:27.380 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
-2020-11-30 13:35:27.392 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
-2020-11-30 13:35:27.395 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
-2020-11-30 13:35:27.402 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
-2020-11-30 13:35:27.435 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
-2020-11-30 13:35:27.457 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
-2020-11-30 13:35:27.458 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2020-11-30 13:35:27.640 [main] INFO  com.company.project.codeReview.test.logStarted - Started test in 8.878 seconds (JVM running for 10.947)
-2020-11-30 13:35:27.900 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:35:27.901 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
-2020-11-30 13:35:27.902 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
-2020-11-30 13:35:27.902 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2020-11-30 13:35:27.902 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:35:27.903 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2020-11-30 13:35:27.907 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
-2020-11-30 13:35:47.377 [main] INFO  com.company.project.codeReview.test.logStarting - Starting test on DESKTOP-SV7UBO9 with PID 14892 (started by Wang in D:\Work\IDEAWork\supermallapi)
-2020-11-30 13:35:47.379 [main] INFO  com.company.project.codeReview.test.logStartupProfileInfo - The following profiles are active: dev
-2020-11-30 13:35:48.770 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:35:48.818 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 40ms. Found 0 Elasticsearch repository interfaces.
-2020-11-30 13:35:48.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2020-11-30 13:35:48.831 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
-2020-11-30 13:35:49.050 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-11-30 13:35:49.679 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$a057e45d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:49.791 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$db03f2cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:49.862 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:49.902 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:49.913 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:50.298 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:50.405 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:50.410 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:50.415 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:50.439 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:51.110 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-30 13:35:52.299 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
-2020-11-30 13:35:52.312 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
-2020-11-30 13:35:52.787 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-30 13:35:53.593 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-11-30 13:35:53.999 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2020-11-30 13:35:54.196 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
-2020-11-30 13:35:54.220 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-11-30 13:35:54.221 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
-2020-11-30 13:35:54.223 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
-2020-11-30 13:35:54.224 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2020-12-02 14:07:24.329 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 14:07:24.329 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 14:07:24.329 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@28d56028
+2020-12-02 14:07:24.339 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 14:07:24.392 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 14:07:24.421 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 14:07:24.476 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 14:07:24.660 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 14:07:24.662 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 14:07:24.663 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 14:07:24.665 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 14:07:24.666 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 14:07:24.678 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 14:07:24.702 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 14:07:24.709 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 14:07:24.713 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 14:07:24.736 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 14:07:24.748 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 14:07:24.748 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 14:07:24.764 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 14:07:24.783 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 14:07:24.786 [main] INFO  com.company.project.Application.logStarted - Started Application in 5.657 seconds (JVM running for 6.951)
+2020-12-02 14:07:28.881 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 14:07:28.882 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 14:07:28.891 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 9 ms
+2020-12-02 14:07:29.356 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 14:07:29.360 [http-nio-8080-exec-2] DEBUG c.c.p.d.E.insertEmployee.debug - ==>  Preparing: INSERT INTO employees ( birth_date, first_name, last_name, gender, hire_date ) VALUES ( NOW(), ?,?,?,NOW()) 
+2020-12-02 14:07:29.470 [http-nio-8080-exec-2] DEBUG c.c.p.d.E.insertEmployee.debug - ==> Parameters: 酷酷2(String), 汪2(String), 1(String)
+2020-12-02 14:07:29.477 [http-nio-8080-exec-2] DEBUG c.c.p.d.E.insertEmployee.debug - <==    Updates: 1
+2020-12-02 14:07:29.482 [http-nio-8080-exec-2] ERROR c.c.p.configurer.WebMvcConfigurer.resolveException - 接口 [/employee/insertEmployee] 出现异常，方法：com.company.project.web.EmployeeController.insertEmployee，异常摘要：Mapper method 'com.company.project.dao.EmployeeMapper.insertEmployee' has an unsupported return type: class com.company.project.model.Employee
+org.apache.ibatis.binding.BindingException: Mapper method 'com.company.project.dao.EmployeeMapper.insertEmployee' has an unsupported return type: class com.company.project.model.Employee
+	at org.apache.ibatis.binding.MapperMethod.rowCountResult(MapperMethod.java:109)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy98.insertEmployee(Unknown Source)
+	at com.company.project.service.impl.EmployeeServiceImpl.insertEmployee(EmployeeServiceImpl.java:22)
+	at com.company.project.web.EmployeeController.insertEmployee(EmployeeController.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-02 14:10:40.479 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:10:40.480 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 14:10:40.480 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 14:10:40.481 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 14:10:40.481 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:10:40.481 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 14:10:40.484 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 14:10:40.495 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
+2020-12-02 14:10:48.657 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 12016 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 14:10:48.661 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 14:10:49.775 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 14:10:49.820 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 39ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 14:10:49.825 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 14:10:49.832 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 14:10:50.004 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 14:10:50.314 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$6846cc21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.401 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$a2f2da90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.447 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.473 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.478 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.841 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.901 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.904 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.909 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:50.927 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:51.277 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:10:51.512 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 14:10:51.522 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 14:10:51.523 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 14:10:51.523 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 14:10:51.640 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 14:10:51.640 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2892 ms
+2020-12-02 14:10:51.696 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 14:10:52.166 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 14:10:52.168 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 14:10:52.477 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 14:10:52.832 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 14:10:53.037 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 14:10:53.150 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 14:10:53.164 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 14:10:53.164 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 14:10:53.165 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 14:10:53.166 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -343,30 +719,119 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2020-11-30 13:35:54.224 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-11-30 13:35:54.224 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
-2020-11-30 13:35:54.225 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@684f7f1c
-2020-11-30 13:35:54.254 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
-2020-11-30 13:35:54.337 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
-2020-11-30 13:35:54.372 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
-2020-11-30 13:35:54.448 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
-2020-11-30 13:35:54.708 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
-2020-11-30 13:35:54.710 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
-2020-11-30 13:35:54.712 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
-2020-11-30 13:35:54.714 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
-2020-11-30 13:35:54.716 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
-2020-11-30 13:35:54.731 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
-2020-11-30 13:35:54.736 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
-2020-11-30 13:35:54.740 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
-2020-11-30 13:35:54.747 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
-2020-11-30 13:35:54.776 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
-2020-11-30 13:35:54.981 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
-2020-11-30 13:35:54.982 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2020-11-30 13:35:55.008 [main] INFO  com.company.project.codeReview.test.logStarted - Started test in 8.601 seconds (JVM running for 10.197)
-2020-11-30 13:35:55.266 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:35:55.268 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
-2020-11-30 13:35:55.268 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
-2020-11-30 13:35:55.268 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2020-11-30 13:35:55.268 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2020-11-30 13:35:55.269 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2020-11-30 13:35:55.274 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 14:10:53.167 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 14:10:53.167 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 14:10:53.167 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@118e2487
+2020-12-02 14:10:53.176 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 14:10:53.230 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 14:10:53.255 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 14:10:53.309 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 14:10:53.492 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 14:10:53.494 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 14:10:53.495 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 14:10:53.496 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 14:10:53.497 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 14:10:53.509 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 14:10:53.513 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 14:10:53.515 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 14:10:53.519 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 14:10:53.543 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 14:10:53.557 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 14:10:53.557 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 14:10:53.574 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 14:10:53.593 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 14:10:53.596 [main] INFO  com.company.project.Application.logStarted - Started Application in 5.776 seconds (JVM running for 7.308)
+2020-12-02 14:10:57.863 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 14:10:57.863 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 14:10:57.871 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 8 ms
+2020-12-02 14:10:58.374 [http-nio-8080-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 14:10:58.378 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - ==>  Preparing: INSERT INTO employees ( birth_date, first_name, last_name, gender, hire_date ) VALUES ( NOW(), ?,?,?,NOW()) 
+2020-12-02 14:10:58.488 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - ==> Parameters: 酷酷2(String), 汪2(String), 1(String)
+2020-12-02 14:10:58.495 [http-nio-8080-exec-1] DEBUG c.c.p.d.E.insertEmployee.debug - <==    Updates: 1
+2020-12-02 14:11:30.685 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:11:30.686 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 14:11:30.686 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 14:11:30.686 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 14:11:30.686 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:11:30.687 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 14:11:30.690 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 14:11:30.702 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
+2020-12-02 14:11:37.498 [main] INFO  com.company.project.Application.logStarting - Starting Application on DESKTOP-SV7UBO9 with PID 12736 (D:\Work\IDEAWork\supermallapi\target\classes started by Wang in D:\Work\IDEAWork\supermallapi)
+2020-12-02 14:11:37.501 [main] INFO  com.company.project.Application.logStartupProfileInfo - The following profiles are active: dev
+2020-12-02 14:11:38.542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-12-02 14:11:38.583 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 35ms. Found 0 Elasticsearch repository interfaces.
+2020-12-02 14:11:38.587 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-12-02 14:11:38.593 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-12-02 14:11:38.752 [main] INFO  o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses - Cannot enhance @Configuration bean definition 'mybatisConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-02 14:11:39.021 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'shiroConfig' of type [com.company.project.configurer.ShiroConfig$$EnhancerBySpringCGLIB$$a5cf31c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.111 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'druidDBConfig' of type [com.company.project.configurer.DruidDBConfig$$EnhancerBySpringCGLIB$$e07b4037] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.143 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.170 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.176 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.530 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'sqlSessionFactoryBean' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.590 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.593 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userMapper' of type [com.sun.proxy.$Proxy93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.597 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userServiceImpl' of type [com.company.project.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.616 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'userRealm' of type [com.company.project.configurer.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:39.950 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 14:11:40.182 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+2020-12-02 14:11:40.192 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-02 14:11:40.193 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2020-12-02 14:11:40.193 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-12-02 14:11:40.306 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2020-12-02 14:11:40.306 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2713 ms
+2020-12-02 14:11:40.371 [main] INFO  o.s.b.web.servlet.RegistrationBean.register - Servlet statViewServlet was not registered (possibly already registered?)
+2020-12-02 14:11:40.850 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService
+2020-12-02 14:11:40.852 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'taskExecutor'
+2020-12-02 14:11:41.181 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-02 14:11:41.526 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-02 14:11:41.737 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration.checkTemplateLocationExists - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-12-02 14:11:41.850 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+2020-12-02 14:11:41.864 [main] INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-02 14:11:41.864 [main] INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+2020-12-02 14:11:41.865 [main] INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+2020-12-02 14:11:41.866 [main] INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-12-02 14:11:41.866 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-12-02 14:11:41.867 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+2020-12-02 14:11:41.867 [main] INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@58a7a58d
+2020-12-02 14:11:41.876 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler.initialize - Initializing ExecutorService 'taskScheduler'
+2020-12-02 14:11:41.929 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+2020-12-02 14:11:41.957 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+2020-12-02 14:11:42.010 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+2020-12-02 14:11:42.202 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_1
+2020-12-02 14:11:42.203 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_1
+2020-12-02 14:11:42.204 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_1
+2020-12-02 14:11:42.205 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_1
+2020-12-02 14:11:42.206 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_1
+2020-12-02 14:11:42.218 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: addUsingPOST_2
+2020-12-02 14:11:42.223 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: deleteUsingDELETE_2
+2020-12-02 14:11:42.225 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: detailUsingGET_2
+2020-12-02 14:11:42.230 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: listUsingGET_2
+2020-12-02 14:11:42.254 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator.startingWith - Generating unique operation named: updateUsingPUT_2
+2020-12-02 14:11:42.268 [main] INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+2020-12-02 14:11:42.268 [main] INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-12-02 14:11:42.286 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-02 14:11:42.336 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-02 14:11:42.340 [main] INFO  com.company.project.Application.logStarted - Started Application in 5.702 seconds (JVM running for 7.011)
+2020-12-02 14:11:45.740 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-02 14:11:45.742 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-12-02 14:11:45.753 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 11 ms
+2020-12-02 14:11:46.203 [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource.init - {dataSource-1} inited
+2020-12-02 14:11:46.206 [http-nio-8080-exec-3] DEBUG c.c.p.d.E.insertEmployee.debug - ==>  Preparing: INSERT INTO employees ( birth_date, first_name, last_name, gender, hire_date ) VALUES ( NOW(), ?,?,?,NOW()) 
+2020-12-02 14:11:46.313 [http-nio-8080-exec-3] DEBUG c.c.p.d.E.insertEmployee.debug - ==> Parameters: 酷酷2(String), 汪2(String), 1(String)
+2020-12-02 14:11:46.320 [http-nio-8080-exec-3] DEBUG c.c.p.d.E.insertEmployee.debug - <==    Updates: 1
+2020-12-02 14:27:31.656 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:27:31.657 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler.shutdown - Shutting down ExecutorService 'taskScheduler'
+2020-12-02 14:27:31.657 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+2020-12-02 14:27:31.657 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-12-02 14:27:31.657 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-12-02 14:27:31.658 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-12-02 14:27:31.661 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'taskExecutor'
+2020-12-02 14:27:31.673 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource.close - {dataSource-1} closed
